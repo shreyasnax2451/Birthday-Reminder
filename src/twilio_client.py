@@ -2,7 +2,11 @@ import os
 import logging
 
 from twilio.rest import Client
-from env import ACCOUNT_SID, AUTH_TOKEN, FROM_NUMBER, TO_NUMBER
+# from env import ACCOUNT_SID, AUTH_TOKEN, FROM_NUMBER, TO_NUMBER
+ACCOUNT_SID = os.environ["ACCOUNT_SID"]
+AUTH_TOKEN = os.environ["AUTH_TOKEN"]
+FROM_NUMBER = os.environ["FROM_NUMBER"]
+TO_NUMBER = os.environ["TO_NUMBER"]
 
 logger = logging.getLogger(__name__)
 

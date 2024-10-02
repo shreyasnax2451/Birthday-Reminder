@@ -1,5 +1,5 @@
 twilio
-dotenv
+# dotenv
 streamlit
 sqlalchemy
 schedule
