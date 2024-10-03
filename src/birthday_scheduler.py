@@ -16,7 +16,7 @@ def schedule_notifications(birthday_object: Birthday) -> None:
         datetime.now().year,
         birthday_object.birthdate.month,
         birthday_object.birthdate.day,
-        2,18,0)
+        0,0,0)
 
     scheduler.add_job(
         send_whatsapp_message, "date", run_date=reminder_time, args=[birthday_object]
